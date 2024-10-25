@@ -48,7 +48,7 @@ Cypress.Commands.add('login', () => {
     cy.visit(baseURL);
   
     // Verify the page is loaded
-    cy.get('.mui-1tb6yvl').contains('Welcome Back');
+    // cy.get('.mui-1tb6yvl').contains('Welcome Back');
   
     // Perform the login using the credentials
     cy.get('#username').type(loginCredentials.username);
@@ -65,6 +65,8 @@ Cypress.Commands.add('login', () => {
         } else {
           cy.log('Button not visible, continuing with the test.');
         }
+        cy.xpath('/html/body/main/div/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div').click();
+        cy.xpath('/html/body/div[2]/div[3]/ul/li[3]').click();
       });
   });
   

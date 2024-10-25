@@ -1,5 +1,5 @@
 
-import { financialDataYearOne, financialDataYearTwo, financialDataYearThree } from './FinancialData.js'; // Adjust the path based on your folder structure
+import { financialDataYearOne, financialDataA, financialDataB, financialDataC, financialDataD, financialDataE, financialDataF, financialDataG, financialDataH, financialDataI, financialDataJ, financialDataK, financialDataL, financialDataM, financialDataN, financialDataO, financialDataP, financialDataQ } from './FinancialDataMulti.js'; // Adjust the path based on your folder structure
 
 const { waitUntilSymbol } = require("next/dist/server/web/spec-extension/fetch-event");
 const { should } = require("chai");
@@ -17,7 +17,7 @@ it('Add Three Financials', () => {
 
 cy.wait(3000)
   //click on a reference number
-cy.get('[id="250"]').click();
+cy.get('[id="242"]').click();
 
 //Clicking the Add new financial button 
 cy.get('#new_financial_statement').as('AddNewFinancialButton');

@@ -1,5 +1,5 @@
 
-import { financialDataYearOne, financialDataYearTwo, financialDataYearThree } from './FinancialData.js'; // Adjust the path based on your folder structure
+import { financialDataYearOne, financialDataYearTwo, financialDataYearThree } from './FinancialData1.js'; // Adjust the path based on your folder structure
 
 const { waitUntilSymbol } = require("next/dist/server/web/spec-extension/fetch-event");
 const { should } = require("chai");
@@ -16,8 +16,8 @@ describe('Testing of the SPreading Tool', function() {
 it('Add Three Financials', () => {
 
 cy.wait(3000)
-  //click on a reference number
-cy.get('[id="250"]').click();
+  //click on a reference numbernpx 
+cy.get('[id="261"]').click();
 
 //Clicking the Add new financial button 
 cy.get('#new_financial_statement').as('AddNewFinancialButton');

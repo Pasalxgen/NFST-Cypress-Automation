@@ -1,8 +1,6 @@
 export const financialDataYearOne = {
   salesRentalIncome: 900,
-  TSRI:100,
   costOfGoodsSold: 200,
-
 
   otherOperatingExpenses: 40,
   salariesWages: 50,
@@ -12,7 +10,6 @@ export const financialDataYearOne = {
   leasingHPCharges: 90,
   directorsRemuneration: 10, // Resets back to 10
   rent: 20,
-  OE1:101,
 
   otherIncomeFI: 30,
 
@@ -32,14 +29,12 @@ export const financialDataYearOne = {
   taxGST: 70,
   loansRelatedParties: 80,
   otherCurrentReceivables: 90,
-  TCA1:102,
 
   motorVehicles: 10, // Resets back to 10
   landBuildings: 20,
   equipment: 30,
   accumulatedDepreciation: -40,
   otherNonCurrentAssets: 50,
-  TFA1:103,
 
   goodwill: 60,
   investments: 70,
@@ -48,7 +43,6 @@ export const financialDataYearOne = {
   dueFromOfficers: 10, // Resets back to 10
   otherIntangibles: 20,
   deferredTaxAsset: 30,
-  TOA1:104,
 
   staffAccruals: 40,
   otherAccrualsProvision: 50,
@@ -61,15 +55,12 @@ export const financialDataYearOne = {
   bankOverdraft: 30,
   taxLiabilities: 40,
   otherCurrentLiabilities: 50,
-  TCL1:105,
 
   mortgageBankLoans: 60,
   loansFromOfficersOrRelatedCompanies: 60,
   longTermDebtHP: 70,
   subordinatedLoans: 80,
   otherNonCurrentLiabilities: 90,
-  TNCL:106,
-
 
   paidUpCapital: 10, // Resets back to 10
   assetRevalReserve: 20,
@@ -77,7 +68,6 @@ export const financialDataYearOne = {
   adjustments: 40,
   dividendsWithdrawals: 50,
   retainedEarningsPreviousYear: 60,
-  TNW:107,
 
   //Values for KPI calculations
   overdraftLimit:0,

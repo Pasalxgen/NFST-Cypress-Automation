@@ -1,5 +1,5 @@
 
-import { financialDataYearOne, financialDataYearTwo, financialDataYearThree } from './FinancialData.js'; // Adjust the path based on your folder structure
+import { financialDataYearOne, financialDataYearTwo, financialDataYearThree } from './FinancialData1.js'; // Adjust the path based on your folder structure
 
 // Function to calculate financial KPIs for a given year of data
 const calculateFinancialKPI = (financialData) => {
@@ -172,7 +172,7 @@ const calculateFinancialKPI = (financialData) => {
   const InterestCoverage = (EBIT / InterestExpensesIC).toFixed(2);
 
   // Total Liabilities to Net Worth = Total Liabilities / Total Net Worth
-  const TotalLiabilitiesToNetWorth = (TotalLiabilities / TotalNetWorth).toFixed(2);
+  const TotalLiabilitiesToNetWorth = TotalNetWorth !== 0 ? (TotalLiabilities / TotalNetWorth).toFixed(2) : 0;
 
     // Net Debt = Total Liabilities - Vehicle Payable New/Demo Inv. - Wholesale Sold Not Paid 
     const NetDebt =TotalLiabilities- financialData.vehiclePayableNewDemo-financialData.wholesaleSoldNotPaid

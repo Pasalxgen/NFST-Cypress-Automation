@@ -3,7 +3,22 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // Implement node event listeners here
+      on('task', {
+        getUserInput() {
+          return new Promise((resolve) => {
+            const readline = require('readline');
+            const rl = readline.createInterface({
+              input: process.stdin,
+              output: process.stdout
+            });
+            rl.question('Enter a value: ', (answer) => {
+              rl.close();
+              resolve(answer);
+            });
+          });
+        }
+      });
     },
   },
 
